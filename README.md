@@ -7,6 +7,7 @@ The aim of the documentation is to ease the step by step for the cross account a
 
 # Architecture:
 
+![image (1)](https://github.com/acunah105/BI_Cross_Account/assets/62151237/5378d100-20be-43d5-b119-d64d79e03d84)
 
 
 # Important:
