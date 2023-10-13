@@ -125,26 +125,12 @@ files = s3_bucket.objects.all()
 x = 1
 final_df = pd.DataFrame()
 for file in files:
-    1
     print(x)
     x = x + 1
     document_key = file.key
     """
     Reading all pdfs from S3 with textract
     """
-    pay_amount_key = 'payment_amount'
-    pay_amount_value = ''
-    pay_num_key = 'payment_number'
-    pay_num_value = ''
-    pay_date_key = 'payment_date'
-    pay_date_value = ''
-    not_owed_key = 'funds_not_owed_to_us'
-    not_owed_value = ''
-    check_funds_key = 'check_funds_required'
-    check_funds_value = ''
-    identifier = 'not_found'
-    identifier_key = 'identifier'
-    document_col = 'document_found'
     forms_textract_response = textract.start_document_analysis(DocumentLocation={'S3Object': {'Bucket': s3_bucket_name, 'Name': document_key}}, FeatureTypes=['FORMS'])
     job_id_forms = forms_textract_response['JobId']
     # print(job_id_forms)
