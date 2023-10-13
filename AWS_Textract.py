@@ -155,26 +155,5 @@ for file in files:
     # print(identifier)
     for key, value in kvs.items():
         print(key, ":", value)
-        if key == "Payment Amount ":
-            pay_amount_key = 'payment_amount'
-            pay_amount_value = value[0]
-        elif key == "Amazon Payment Number ":
-            pay_num_key = 'payment_number'
-            pay_num_value = value[0]
-        elif key == "Payment Date ":
-            pay_date_key = 'payment_date'
-            pay_date_value = value[0]
-        elif key == "Our records indicate these funds are not owed to us. ":
-            not_owed_key = 'funds_not_owed_to_us'
-            not_owed_value = value[0]
-        elif key == "Please issue a check for the above listed funds. By signing this notice, I hereby certify payment of the amount set forth above has not been received and that I am entitled claim such amount. If you are signing on behalf of a business, state your title (i.e., owner, officemanager, etc.). If you are signing on behalf of another person, state your relationship (i.e., personal representative, spouse, etc.). Attach a copy of your appointment as personal representative, power of attorney, etc., as applicable. ":
-            check_funds_key = 'check_funds_required'
-            check_funds_value = value[0]
-    single_row = pd.DataFrame([[identifier, pay_amount_value, pay_num_value, pay_date_value, not_owed_value, check_funds_value,document_key]],columns=[[identifier_key, pay_amount_key, pay_num_key, pay_date_key, not_owed_key, check_funds_key,document_col]])
-    # print(single_row)
-    final_df = pd.concat([final_df, single_row], ignore_index=True)
-print(final_df)
-
-final_df.to_csv('{S3BUCKET}/escheament_processed.csv')    
-
+      
 job.commit()
