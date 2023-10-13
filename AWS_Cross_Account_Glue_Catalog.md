@@ -16,17 +16,6 @@ The aim of the documentation is to ease the step by step for the cross account a
 -Documentation based on solution: https://aws.amazon.com/es/blogs/big-data/use-amazon-athena-and-amazon-quicksight-in-a-cross-account-environment/
 
 
-# Prerequisites:
-
-Main QuickSight Account & Athena table review and troubleshooting:
-Conduit admin access LatamData:https://bindles.amazon.com/resource/amzn1.bindle.resource.4frc5z7nscf2pymkjzlq
-Mailing List: https://email-list.amazon.com/email-list/expand-list/ba-finops-latam
-
-New Accounts:
-Conduit admin access sjo-bi-apcorp: https://bindles.amazon.com/resource/amzn1.bindle.resource.m36pmfkiok62syr3hlfai
-Mailing List: https://email-list.amazon.com/email-list/expand-list/sjo-bi-apcorp
-
-
 # AWS Tools:
 
 
